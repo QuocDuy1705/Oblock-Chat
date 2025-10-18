@@ -40,6 +40,7 @@ GAMING_UDP_PORTS="27015,27016,3074,3075,3658,5223,6112,9308,27000:27050,30000:30
 # Fortnite: 9000-9100 UDP
 # PUBG: 7000-8000 UDP
 # Apex Legends: 37000-40000 TCP
+# GTA5VN: 6672, 61455-61458 UDP, 30211-30217 TCP
 
 configure_qos() {
     local interface=$1
@@ -118,6 +119,13 @@ configure_iptables_marking() {
     
     # Apex Legends
     iptables -t mangle -A POSTROUTING -p tcp --dport 37000:40000 -j MARK --set-mark 1
+    
+    # GTA5VN / GTA Online
+    iptables -t mangle -A POSTROUTING -p udp --dport 6672 -j MARK --set-mark 1
+    iptables -t mangle -A POSTROUTING -p udp --dport 61455:61458 -j MARK --set-mark 1
+    iptables -t mangle -A POSTROUTING -p tcp --dport 30211:30217 -j MARK --set-mark 1
+    iptables -t mangle -A POSTROUTING -p udp --sport 6672 -j MARK --set-mark 1
+    iptables -t mangle -A POSTROUTING -p udp --sport 61455:61458 -j MARK --set-mark 1
     
     # VoIP/Streaming - mark 2
     # Discord

@@ -116,7 +116,7 @@ prioritize_gaming_packets() {
     iptables -t mangle -F OUTPUT 2>/dev/null
     
     # Gaming UDP ports - TOS/DSCP marking cho lowest latency
-    GAMING_PORTS="27000:27050,3074:3075,5000:5500,6112,7000:8000,9000:9100,27015:27030,30000:30009"
+    GAMING_PORTS="27000:27050,3074:3075,5000:5500,6112,7000:8000,9000:9100,27015:27030,30000:30009,6672,61455:61458,30211:30217"
     
     # Mark gaming packets với highest priority
     iptables -t mangle -A OUTPUT -p udp -m multiport --dports $GAMING_PORTS -j TOS --set-tos 0x10

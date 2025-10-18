@@ -605,6 +605,7 @@ sudo ethtool -s eth0 wol d
 | Call of Duty | 3074-3075 | 3074-3075 |
 | Overwatch | 80, 443, 1119 | 3478-3479 |
 | Rainbow Six | 80, 443 | 3074-3075 |
+| **GTA5VN / GTA Online** | **80, 443, 30211-30217** | **6672, 61455-61458** |
 
 ## 📚 Additional Resources
 

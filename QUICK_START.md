@@ -185,6 +185,17 @@ sudo ./gaming-qos.sh 50 100
 
 **Kết quả:** Stable connection, no packet loss
 
+### GTA5VN / GTA Online (NEW! 🆕)
+
+```bash
+# Focus: P2P optimization, no disconnect
+sudo ./network-optimizer.sh
+sudo ./gta5-optimizer.sh
+sudo ./dns-optimizer.sh
+```
+
+**Kết quả:** No session timeout, stable P2P, Open/Moderate NAT
+
 ## 🛠️ Commands Hữu ích
 
 ### Kiểm tra Status

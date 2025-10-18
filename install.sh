@@ -108,6 +108,7 @@ install_scripts() {
         "anti-ghostbullet.sh"
         "input-optimizer.sh"
         "low-latency-gaming.sh"
+        "gta5-optimizer.sh"
     )
     
     for script in "${SCRIPTS[@]}"; do
@@ -268,6 +269,7 @@ show_completion() {
     echo -e "  ${CYAN}gaming-qos.sh${NC}             - QoS cho gaming"
     echo -e "  ${CYAN}reduce-bufferbloat.sh${NC}     - Giảm bufferbloat"
     echo -e "  ${CYAN}dns-optimizer.sh${NC}          - Tối ưu DNS"
+    echo -e "  ${CYAN}gta5-optimizer.sh${NC}         - Tối ưu GTA5VN"
     
     echo -e "\n${YELLOW}Bước tiếp theo:${NC}"
     echo -e "  1. Chạy: ${CYAN}sudo network-optimizer.sh${NC}"
