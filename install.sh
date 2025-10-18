@@ -105,6 +105,9 @@ install_scripts() {
         "gaming-qos.sh"
         "reduce-bufferbloat.sh"
         "dns-optimizer.sh"
+        "anti-ghostbullet.sh"
+        "input-optimizer.sh"
+        "low-latency-gaming.sh"
     )
     
     for script in "${SCRIPTS[@]}"; do
@@ -125,13 +128,22 @@ echo "╔═══════════════════════�
 echo "║  Network Optimization Toolkit              ║"
 echo "╚════════════════════════════════════════════╝"
 echo ""
-echo "1. Network Optimizer   - Tối ưu toàn diện"
+echo "=== Network Optimization ==="
+echo "1. Network Optimizer   - Tối ưu toàn diện mạng"
 echo "2. Network Monitor     - Giám sát mạng"
-echo "3. Gaming QoS          - Ưu tiên gaming"
+echo "3. Gaming QoS          - Ưu tiên gaming traffic"
 echo "4. Reduce Bufferbloat  - Giảm bufferbloat"
 echo "5. DNS Optimizer       - Tối ưu DNS"
 echo ""
-read -p "Chọn [1-5]: " choice
+echo "=== System Optimization ==="
+echo "6. Anti Ghost Bullet   - Xóa viên đạn trắng"
+echo "7. Input Optimizer     - No input delay"
+echo "8. Low Latency Gaming  - Tối ưu toàn hệ thống"
+echo ""
+echo "9. Apply ALL           - Áp dụng tất cả"
+echo "0. Exit"
+echo ""
+read -p "Chọn [0-9]: " choice
 
 case $choice in
     1) sudo network-optimizer.sh ;;
@@ -139,6 +151,19 @@ case $choice in
     3) sudo gaming-qos.sh ;;
     4) sudo reduce-bufferbloat.sh ;;
     5) sudo dns-optimizer.sh ;;
+    6) sudo anti-ghostbullet.sh ;;
+    7) sudo input-optimizer.sh ;;
+    8) sudo low-latency-gaming.sh ;;
+    9) 
+        echo "Đang áp dụng tất cả tối ưu..."
+        sudo network-optimizer.sh
+        sudo reduce-bufferbloat.sh
+        sudo anti-ghostbullet.sh
+        sudo input-optimizer.sh
+        sudo low-latency-gaming.sh
+        echo "✓ Hoàn tất! Khởi động lại để áp dụng hoàn toàn."
+        ;;
+    0) echo "Tạm biệt!" ;;
     *) echo "Invalid choice" ;;
 esac
 EOF
