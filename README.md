@@ -41,6 +41,8 @@ Bộ công cụ tối ưu hóa mạng chuyên sâu cho gaming, giúp **giảm de
 
 # 📘 LINUX VERSION (Original)
 
+> 🇻🇳 **[Xem hướng dẫn tiếng Việt chi tiết →](HUONG_DAN_SU_DUNG.md)**
+
 ## ✨ Tính năng
 
 ### 🚀 Giảm Delay & Latency
