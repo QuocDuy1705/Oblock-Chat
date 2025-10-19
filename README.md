@@ -1,6 +1,45 @@
 # 🎮 Network Optimization Toolkit - Gaming Edition
 
-Bộ công cụ tối ưu hóa mạng chuyên sâu cho gaming, giúp **giảm delay, ping, latency** và cải thiện trải nghiệm chơi game trên Linux.
+Bộ công cụ tối ưu hóa mạng chuyên sâu cho gaming, giúp **giảm delay, ping, latency** và cải thiện trải nghiệm chơi game.
+
+## 🌟 HỖ TRỢ CẢ LINUX VÀ WINDOWS!
+
+- **Linux**: Scripts bash (.sh) - Xem hướng dẫn bên dưới
+- **Windows**: Scripts PowerShell (.ps1) - **[Xem hướng dẫn Windows](WINDOWS_EDITION.md)** ⭐
+
+---
+
+## 📂 CẤU TRÚC PROJECT
+
+```
+├── *.sh                      # Linux version (bash scripts)
+│   ├── network-optimizer.sh
+│   ├── low-latency-gaming.sh
+│   ├── reduce-bufferbloat.sh
+│   ├── anti-ghostbullet.sh
+│   ├── input-optimizer.sh
+│   └── install.sh
+│
+├── windows/                  # Windows version (PowerShell scripts) ⭐ MỚI!
+│   ├── Network-Optimizer.ps1
+│   ├── Low-Latency-Gaming.ps1
+│   ├── Anti-Bufferbloat.ps1
+│   ├── Anti-WhiteBullet.ps1
+│   ├── Input-Optimizer.ps1
+│   ├── Install-All.ps1      # Master installer
+│   ├── Test-Ping.ps1         # Network tester
+│   ├── README.md             # Hướng dẫn chi tiết Windows
+│   └── QUICK_START_VI.md     # Hướng dẫn nhanh tiếng Việt
+│
+└── WINDOWS_EDITION.md        # ⭐ Đọc đây để biết về phiên bản Windows!
+```
+
+### 🚀 NHANH: Bạn dùng Windows?
+**→ [ĐỌC NGAY: WINDOWS_EDITION.md](WINDOWS_EDITION.md)** 🎮
+
+---
+
+# 📘 LINUX VERSION (Original)
 
 ## ✨ Tính năng
 

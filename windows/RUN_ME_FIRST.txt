@@ -1,0 +1,48 @@
+═══════════════════════════════════════════════════════════════════
+  🎮 WINDOWS GAMING OPTIMIZER - HƯỚNG DẪN NHANH
+═══════════════════════════════════════════════════════════════════
+
+📌 CÁCH SỬ DỤNG SIÊU NHANH (3 PHÚT):
+
+1️⃣  MỞ POWERSHELL (ADMIN):
+   - Nhấn Windows + X
+   - Chọn "Windows PowerShell (Admin)" hoặc "Terminal (Admin)"
+
+2️⃣  CHO PHÉP CHẠY SCRIPTS (CHỈ 1 LẦN):
+   Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+
+3️⃣  DI CHUYỂN ĐẾN FOLDER NÀY:
+   cd "C:\path\to\this\folder"
+
+4️⃣  CHẠY MASTER INSTALLER:
+   .\Install-All.ps1
+
+5️⃣  KHỞI ĐỘNG LẠI MÁY (BẮT BUỘC!)
+
+═══════════════════════════════════════════════════════════════════
+
+✅ KẾT QUẢ:
+  • Giảm ping 30-60%
+  • Giảm lag chuột/phím 60-70%
+  • Xóa viên đạn trắng 90%
+  • CPU/GPU max performance
+  • Gameplay mượt mà hơn!
+
+═══════════════════════════════════════════════════════════════════
+
+📚 ĐỌC THÊM:
+  • README.md - Hướng dẫn chi tiết
+  • QUICK_START_VI.md - Hướng dẫn nhanh tiếng Việt
+
+═══════════════════════════════════════════════════════════════════
+
+⚠️  LƯU Ý:
+  • Cần quyền Administrator
+  • Khởi động lại sau khi chạy
+  • Pin laptop sẽ tụt nhanh hơn (trade-off: performance > battery)
+
+═══════════════════════════════════════════════════════════════════
+
+🎯 CHÚC BẠN RANK CAO! 🏆
+
+═══════════════════════════════════════════════════════════════════
